@@ -44,5 +44,12 @@ p {
 .hero-section {
     >.nav-bar {
         background-color: aqua;
+        >.nav-links{
+           ul{
+            .nav-links{
+                font-size: 1vw;
+            }
+           }
+        }
     }
 }
