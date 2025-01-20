@@ -313,4 +313,20 @@ img {
             color: #323232;
         }
     }
+    .mainCourcePage{
+        width: 85%;
+        height: 65%;
+        .courceDetails{
+            border-radius: 5%;
+            .courceInfo{
+                .std-count, .duration{
+                    font-size: 0.8vw;
+                }
+            }
+            .courseTitle{
+                font-size: 1.2vw;
+                color: #324361;
+            }
+        }
+    }
 }
