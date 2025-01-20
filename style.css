@@ -1,13 +1,48 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+* {
     margin: 0;
     border: 0;
     padding: 0;
+    font-size: 15px;
+}
+
+
+:root {
+    --step--2: clamp(0.7813rem, 0.7779rem + 0.0176vw, 0.8rem);
+    --step--1: clamp(0.9375rem, 0.9265rem + 0.0588vw, 1rem);
+    --step-0: clamp(1.125rem, 1.1029rem + 0.1176vw, 1.25rem);
+    --step-1: clamp(1.35rem, 1.3125rem + 0.2vw, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.5612rem + 0.3135vw, 1.9531rem);
+    --step-3: clamp(1.944rem, 1.8562rem + 0.4681vw, 2.4414rem);
+    --step-4: clamp(2.3328rem, 2.2059rem + 0.6767vw, 3.0518rem);
+    --step-5: clamp(2.7994rem, 2.6202rem + 0.9556vw, 3.8147rem);
+  }
+
+:root {
+    /* --------------------Font Family--------------------- */
+
+    /* -----------------------Colors----------------------- */
+    --FONT-LOGIN: #4A4A4A
+}
+
+
+/* --------------Global CSS------------ */
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+.bg-grad {
+    background-image: linear-gradient(to right, #753feb, #4e2f92, #04016C);
+}
+
+.btn-grad {
+    background-image: linear-gradient(to left, #753feb, #04016C);
 }
 
 /* FONT CSS */
@@ -36,20 +71,98 @@ p {
     font-style: italic;
 }
 
-/* HERO SECTION CSS */
-.logo-sm {
-    height: 6.5vw;
+.righteous-regular {
+    font-family: "Righteous", serif;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-style: normal;
 }
 
+.saira {
+    font-family: "Saira", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+        "width" 100;
+}
+
+/* HERO SECTION CSS */
+
 .hero-section {
+    height: 825px;
+
     >.nav-bar {
-        background-color: aqua;
-        >.nav-links{
-           ul{
-            .nav-links{
-                font-size: 1vw;
+        height: 12%;
+
+        >.navbar-links {
+            >.nav-links-container{
+                width: 30%;
+                .nav-links{
+                    font-size: 1vw
+                }
             }
-           }
+
+            .nav-con-links {
+                box-sizing: content-box;
+                width: 30%;
+                height: auto;
+                .nav-icons{
+                    width: 1.5vw;
+                }
+            }
+
+            .con-login {
+                width: 30%;
+                gap: 15%;
+
+                .btn-login {
+                    text-decoration-color: var(--FONT-LOGIN);
+                    font-size: 1vw;
+                }
+
+                .btn-sighup {
+                    width: 45%;
+                    height: 45%;
+                    font-size: 1vw;
+                }
+            }
         }
     }
+
+    >.hero-page {
+        height: 88%;
+        padding: 8% 8% 0 8%;
+
+        .left-cont {
+
+            .main-text {
+                line-height: 115%;
+                font-size: 4.3vw;
+                .span-txt{
+                    font-size: 4.3vw;
+                }
+            }
+
+            .con-2 {
+                height: 40%;
+                width: 100%;
+                padding: 10% 0;
+
+                .view-cource {
+                    border-radius: 5px;
+                    border: 2px solid white;
+                }
+
+                .consultent-btn {
+                    height: 50%;
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+.fc-login {
+    color: var(--FONT-LOGIN);
 }
