@@ -15,13 +15,14 @@
     --step-3: clamp(1.944rem, 1.8562rem + 0.4681vw, 2.4414rem);
     --step-4: clamp(2.3328rem, 2.2059rem + 0.6767vw, 3.0518rem);
     --step-5: clamp(2.7994rem, 2.6202rem + 0.9556vw, 3.8147rem);
-  }
+}
 
 :root {
     /* --------------------Font Family--------------------- */
 
     /* -----------------------Colors----------------------- */
-    --FONT-LOGIN: #4A4A4A
+    --FONT-LOGIN: #4A4A4A;
+    --SEARCH-FC:#62657d;
 }
 
 
@@ -37,12 +38,17 @@ img {
 }
 
 
-.bg-grad {
+.bg-grad-primery {
     background-image: linear-gradient(to right, #753feb, #4e2f92, #04016C);
 }
-
+.bg-grad-sec {
+    background-image: linear-gradient(to right, #7c42a2, #340f86, #100abf);
+}
 .btn-grad {
     background-image: linear-gradient(to left, #753feb, #04016C);
+}
+.bg-grad-fc {
+    background-image: linear-gradient(to top, #c9e0f7, #F0F3FF);
 }
 
 /* FONT CSS */
@@ -87,18 +93,43 @@ img {
         "width" 100;
 }
 
+.rowdies-light {
+    font-family: "Rowdies", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .rowdies-regular {
+    font-family: "Rowdies", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .rowdies-bold {
+    font-family: "Rowdies", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+
 /* HERO SECTION CSS */
 
 .hero-section {
-    height: 825px;
-
+    height: 53.7vw;
     >.nav-bar {
         height: 12%;
 
+        .logo-container {
+            .main-logo {
+                width: 35%;
+            }
+        }
+
         >.navbar-links {
-            >.nav-links-container{
+            >.nav-links-container {
                 width: 30%;
-                .nav-links{
+
+                .nav-links {
                     font-size: 1vw
                 }
             }
@@ -107,7 +138,8 @@ img {
                 box-sizing: content-box;
                 width: 30%;
                 height: auto;
-                .nav-icons{
+
+                .nav-icons {
                     width: 1.5vw;
                 }
             }
@@ -133,23 +165,31 @@ img {
     >.hero-page {
         height: 88%;
         padding: 8% 8% 0 8%;
+        border: 1px solid rgb(150, 150, 249);
 
         .left-cont {
+            .sec-text {
+                font-size: 1vw;
+            }
 
             .main-text {
                 line-height: 115%;
                 font-size: 4.3vw;
-                .span-txt{
+
+                .span-txt {
                     font-size: 4.3vw;
                 }
             }
 
             .con-2 {
-                height: 40%;
+                height: 25%;
                 width: 100%;
-                padding: 10% 0;
+                padding: 5% 0;
 
                 .view-cource {
+                    height: 3.2vw;
+                    width: 10vw;
+                    font-size: 1vw;
                     border-radius: 5px;
                     border: 2px solid white;
                 }
@@ -157,12 +197,120 @@ img {
                 .consultent-btn {
                     height: 50%;
                     width: 40%;
+                    font-size: 1vw;
+                }
+            }
+            .left-search{
+                width: 60%;
+                padding: 2.5% 5% 2.5% 4%;  
+            }
+            .left-search::placeholder{
+                color: var(--SEARCH-FC);
+                font-size: 0.7vw;
+                
+            }
+            .btn-search{
+                width: 7%;
+                height: 2.5vw;
+                top: 42.3vw;
+                left: 25.5vw;
+                font-size: 0.8vw;
+                border-radius: 0.2vw;
+                background-color: #753feb;
+                .icon-serch{
+                    width: 1.2vw;
                 }
             }
         }
+
+        .right-cont {
+
+            .grad {
+                top: 10vw;
+                left: 28vw;
+                width: 25%;
+                height: 40%;
+                border-radius: 50%;
+                box-shadow: 2vw 1vw 60vw 13vw rgb(241, 244, 251);
+                background-image: radial-gradient(rgb(183, 196, 231), rgb(215, 215, 215), rgb(255, 255, 255));
+                border: none;
+            }
+
+            .right-image {
+                width: 69%;
+                z-index: 4;
+                box-sizing: border-box;
+                left: 14vw;
+                top: -9vw;
+            }
+
+            .design-line {
+                width: 20vw;
+
+                .vertical-line {
+                    height: 9vw;
+                    width: 0.05vw;
+                    background-color: #39bdf7;
+
+                    .circle {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 1.5vw;
+                        height: 1.5vw;
+                        background-color: #39bdf7;
+                        border-radius: 50%;
+                        color: #ffffff;
+                        font-size: 2vw;
+                    }
+                }
+                .txt-con{
+                    .txt-left{
+                        font-size: 0.8vw;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+    .buttomLogo{
+        left: 40vw;
+        top: 39vw;
+        width: 15vw;
+    }
+
+    .fc-login {
+        color: var(--FONT-LOGIN);
     }
 }
 
-.fc-login {
-    color: var(--FONT-LOGIN);
+.sponsor{
+    height: 8vw;
+    .spancerLogo{
+        width: 5vw;
+    }
+}
+
+.featuredCourse{
+    aspect-ratio: 1.041/1;
+    .title-fc-con{
+        height: 20%;
+        .title-FC{
+            font-size: 2.5vw;
+            color: #323232;
+            .tag-FC{
+                padding: 0 0 0 1vw;
+                font-size: 2.5vw;
+                color: #4883FF;
+            }
+        }
+        .secText-FC{
+            font-size: 1.3vw;
+            letter-spacing: 0.2vw;
+            color: #323232;
+        }
+    }
 }
