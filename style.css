@@ -510,7 +510,17 @@ img {
     }
 
     .social-media{
-        
+        height: 25%;
+        .social{
+            padding: 1vw 0;
+            height: 75%;
+            .social-tag{
+                width: 20vw;
+            }
+        }
+        .Privacy{
+            height: 25%;
+        }
     }
 }
 
