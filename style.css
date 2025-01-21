@@ -51,6 +51,10 @@ img {
     background-image: linear-gradient(to top, #c9e0f7, #F0F3FF);
 }
 
+.bg-grade-OC{
+    background-image: linear-gradient(to right, #739FE8, #4F18CA);
+}
+
 /* FONT CSS */
 
 .volkhov-regular {
@@ -326,6 +330,77 @@ img {
             .courseTitle{
                 font-size: 1.2vw;
                 color: #324361;
+            }
+        }
+    }
+    .con-moreCource{
+        height: 15%;
+        button{
+            width: 10vw;
+            height: 3vw;
+            border-radius: 5px;
+        }
+    }
+}
+
+/* Cource Details */
+
+.ourCourses{
+    aspect-ratio: 1/0.406;
+    .title-OC{
+        padding-top: 5vw;
+        font-size: 2.5vw;
+        .learn{
+            font-size: 2.5vw;
+        }
+    }
+    .paraOfOC{
+        font-size: 1.3vw;
+        padding-top: 1vw;
+        width: 35vw;
+    }
+    .oc-image{
+        padding-top: 5vw;
+        width: 70vw;
+    }
+    .oc-icon{
+        width: 10vw;
+        top: 8vw;
+        left: 0vw;
+    }
+}
+
+/* Top Categories */
+
+.Categories{
+    aspect-ratio: 1/0.4359;
+    .TC-title{
+        padding-top: 4vw;
+        font-size: 2.5vw;
+        .cate{
+            font-size: 2.5vw;
+        }
+    }
+    .paraOfTC{
+        font-size: 1vw;
+        color: #323232;
+    }
+    .Categories-list{
+        margin-top: 8vw;
+        width: 85%;
+        height: 18vw;
+        .catagoriesDetails{
+            border-radius: 1vw;
+            padding: 1.5vw 0 1.5vw 0;
+            .tc-icon{
+                width: 60%;
+            }
+            .course-title{
+                width: 8vw;
+            }
+            .text-couse{
+                font-size: 0.8vw;
+                color: #323232;
             }
         }
     }
